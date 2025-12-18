@@ -6,9 +6,7 @@
   <title>Microsite SMAVISKA</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -55,16 +53,15 @@
 
     /* SECTION */
     .section {
-      margin-top: 36px;
+      margin-top: 40px;
     }
 
     .section-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 20px;
-      margin-bottom: 16px;
+      text-align: center;
       font-weight: 600;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #d6caca;
     }
 
     /* GRID */
@@ -72,12 +69,13 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 18px;
+      margin-top: 20px;
     }
 
     /* BUTTON */
     .btn {
       background: white;
-      padding: 18px 14px;
+      padding: 16px 14px;
       border-radius: 14px;
       text-decoration: none;
       color: #333;
@@ -93,70 +91,71 @@
     }
 
     .icon {
-      font-size: 28px;
+      font-size: 30px;
       display: block;
       margin-bottom: 8px;
     }
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+      .grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 500px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
+      .grid { grid-template-columns: 1fr; }
     }
-
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <div class="header"></div>
 
-  <!-- PROFILE -->
   <div class="profile">
-    <!-- Ganti src dengan logo sekolah jika sudah ada -->
-    <img src="logo.png" alt="Logo Sekolah" class="logo">
+    <img src="logo.png" class="logo" alt="Logo Sekolah">
     <h1>SMA Negeri 6 Surakarta</h1>
     <p>Microsite Resmi SMAVISKA</p>
   </div>
 
-  <!-- CONTENT -->
   <div class="container">
 
     <!-- DOKUMEN SEKOLAH -->
     <div class="section">
-      <div class="section-title">📄 Dokumen Sekolah</div>
+      <div class="section-title">Dokumen Sekolah</div>
       <div class="grid">
-        <a class="btn" href="#" target="_blank">
-          <span class="icon">📑</span>
-          SK Pembagian Tugas
-        </a>
-        <a class="btn" href="#" target="_blank">
-          <span class="icon">📘</span>
-          Kurikulum Satuan Pendidikan
-        </a>
+        <a class="btn" href="#"><span class="icon">📑</span>SK Pembagian Tugas</a>
+        <a class="btn" href="#"><span class="icon">📘</span>Kurikulum Satuan Pendidikan</a>
       </div>
     </div>
 
-    <!-- DATA -->
+    <!-- DATA GURU & SISWA -->
     <div class="section">
-      <div class="section-title">👥 Data Guru dan Siswa</div>
+      <div class="section-title">Data Guru dan Siswa</div>
       <div class="grid">
-        <a class="btn" href="#" target="_blank">
-          <span class="icon">👩‍🏫</span>
-          Data Guru
-        </a>
-        <a class="btn" href="#" target="_blank">
-          <span class="icon">🎓</span>
-          Data Siswa
-        </a>
+        <a class="btn" href="#"><span class="icon">👩‍🏫</span>Data Guru</a>
+        <a class="btn" href="#"><span class="icon">🎓</span>Data Siswa</a>
+      </div>
+    </div>
+
+    <!-- SMAVISKA UPDATE -->
+    <div class="section">
+      <div class="section-title">Smaviska Update</div>
+      <div class="grid">
+        <a class="btn" href="#"><span class="icon">📅</span>Agenda Sekolah</a>
+        <a class="btn" href="#"><span class="icon">🏅</span>Prestasi Siswa</a>
+      </div>
+    </div>
+
+    <!-- BRANDING SEKOLAH -->
+    <div class="section">
+      <div class="section-title">Branding Sekolah</div>
+      <div class="grid">
+        <a class="btn" href="#"><span class="icon">🌴</span>Sekolah Adiwiyata</a>
+        <a class="btn" href="#"><span class="icon">🌱</span>Sekolah Adipangastuti</a>
+        <a class="btn" href="#"><span class="icon">📊</span>Sekolah Berintegritas</a>
+        <a class="btn" href="#"><span class="icon">😊</span>Sekolah Ramah Anak</a>
+        <a class="btn" href="#"><span class="icon">👨‍👩‍👧</span>Sekolah Siaga Kependudukan</a>
+        <a class="btn" href="#"><span class="icon">💚</span>Sekolah Sehat</a>
       </div>
     </div>
 
