@@ -24,7 +24,9 @@
     /* HEADER */
     .header {
       height: 220px;
-     background: url("banner.png") center center / cover no-repeat;
+      background: 
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url("banner.png") center center / cover no-repeat;
     }
 
     .profile {
@@ -67,20 +69,8 @@
     .section-title {
       text-align: center;
       font-weight: 600;
-      letter-spacing: .3px;
       margin-bottom: 22px;
       color: #444;
-      position: relative;
-    }
-
-    .section-title::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: #7c3aed;
-      margin: 10px auto 0;
-      border-radius: 3px;
     }
 
     /* GRID */
@@ -90,7 +80,7 @@
       gap: 20px;
     }
 
-    /* BUTTON */
+    /* BUTTON BASE */
     .btn {
       background: #fff;
       padding: 22px 16px;
@@ -100,6 +90,7 @@
       text-align: center;
       box-shadow: 0 10px 24px rgba(0,0,0,0.08);
       transition: all .25s ease;
+      border-top: 5px solid transparent;
     }
 
     .btn:hover {
@@ -109,16 +100,27 @@
 
     .btn i {
       font-size: 26px;
-      color: #7c3aed;
       margin-bottom: 10px;
       display: block;
     }
 
     .btn span {
-      display: block;
       font-weight: 500;
       font-size: 15px;
     }
+
+    /* COLOR THEMES */
+    .blue   { border-color: #4f7cff; background: #f2f6ff; }
+    .blue i { color: #4f7cff; }
+
+    .green   { border-color: #2fa36b; background: #eef9f3; }
+    .green i { color: #2fa36b; }
+
+    .orange   { border-color: #f59e0b; background: #fff4e6; }
+    .orange i { color: #f59e0b; }
+
+    .purple   { border-color: #7c3aed; background: #f4f1ff; }
+    .purple i { color: #7c3aed; }
 
     /* RESPONSIVE */
     @media (max-width: 900px) {
@@ -136,19 +138,19 @@
   <div class="header"></div>
 
   <div class="profile">
-    <img src="logo.png" class="logo" alt="Logo Sekolah">
+    <img src="logo.png" class="logo">
     <h1>SMA Negeri 6 Surakarta</h1>
     <p>Microsite Resmi SMAVISKA</p>
   </div>
 
   <div class="container">
 
-    <!-- DOKUMEN SEKOLAH -->
+    <!-- DOKUMEN -->
     <div class="section">
       <div class="section-title">Dokumen Sekolah</div>
       <div class="grid">
-        <a class="btn" href="#"><i class="fa-solid fa-file-lines"></i><span>SK Pembagian Tugas</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-book"></i><span>Kurikulum Satuan Pendidikan</span></a>
+        <a class="btn blue"><i class="fa-solid fa-file-lines"></i><span>SK Pembagian Tugas</span></a>
+        <a class="btn blue"><i class="fa-solid fa-book"></i><span>Kurikulum Satuan Pendidikan</span></a>
       </div>
     </div>
 
@@ -156,8 +158,8 @@
     <div class="section">
       <div class="section-title">Data Guru dan Siswa</div>
       <div class="grid">
-        <a class="btn" href="https://docs.google.com/spreadsheets/d/1wGYOAs0GF7IFwaQ61iXdQHYZKy_ICEy5RJXlSR_msvE/edit?usp=sharing"><i class="fa-solid fa-chalkboard-user"></i><span>Data Guru</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-user-graduate"></i><span>Data Siswa</span></a>
+        <a class="btn green"><i class="fa-solid fa-chalkboard-user"></i><span>Data Guru</span></a>
+        <a class="btn green"><i class="fa-solid fa-user-graduate"></i><span>Data Siswa</span></a>
       </div>
     </div>
 
@@ -165,8 +167,8 @@
     <div class="section">
       <div class="section-title">Smaviska Update</div>
       <div class="grid">
-        <a class="btn" href="#"><i class="fa-solid fa-calendar-days"></i><span>Agenda Sekolah</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-medal"></i><span>Prestasi Siswa</span></a>
+        <a class="btn orange"><i class="fa-solid fa-calendar-days"></i><span>Agenda Sekolah</span></a>
+        <a class="btn orange"><i class="fa-solid fa-medal"></i><span>Prestasi Siswa</span></a>
       </div>
     </div>
 
@@ -174,12 +176,12 @@
     <div class="section">
       <div class="section-title">Branding Sekolah</div>
       <div class="grid">
-        <a class="btn" href="#"><i class="fa-solid fa-seedling"></i><span>Sekolah Adiwiyata</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-leaf"></i><span>Sekolah Adipangastuti</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-shield-halved"></i><span>Sekolah Berintegritas</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-child-reaching"></i><span>Sekolah Ramah Anak</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-people-roof"></i><span>Sekolah Siaga Kependudukan</span></a>
-        <a class="btn" href="#"><i class="fa-solid fa-heart-pulse"></i><span>Sekolah Sehat</span></a>
+        <a class="btn purple"><i class="fa-solid fa-seedling"></i><span>Sekolah Adiwiyata</span></a>
+        <a class="btn purple"><i class="fa-solid fa-leaf"></i><span>Sekolah Adipangastuti</span></a>
+        <a class="btn purple"><i class="fa-solid fa-shield-halved"></i><span>Sekolah Berintegritas</span></a>
+        <a class="btn purple"><i class="fa-solid fa-child-reaching"></i><span>Sekolah Ramah Anak</span></a>
+        <a class="btn purple"><i class="fa-solid fa-people-roof"></i><span>Sekolah Siaga Kependudukan</span></a>
+        <a class="btn purple"><i class="fa-solid fa-heart-pulse"></i><span>Sekolah Sehat</span></a>
       </div>
     </div>
 
