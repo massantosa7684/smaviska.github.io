@@ -229,8 +229,10 @@ p {
   }
 
   .header {
-    height: 120px;
-  }
+  height: 160px;
+  background-position: center top;
+}
+
 
   .profile {
     margin-top: -45px;
@@ -259,12 +261,17 @@ p {
     display: none;
   }
 
-  /* GRID — SAMA SEPERTI SOSMED */
-  .grid,
-  .grid-sosmed {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
-  }
+  /* GRID — MOBILE LEBIH RAPI */
+.grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+/* MEDIA SOSIAL TETAP 4 */
+.grid-sosmed {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 
   /* CARD — TIDAK TERPOTONG */
   .btn {
@@ -274,7 +281,7 @@ p {
     justify-content: flex-start;
 
     padding: 14px 6px 10px;
-    min-height: 96px;
+    min-height: 108px;
 
     border-radius: 18px;
     background: #fff;
