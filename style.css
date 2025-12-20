@@ -89,7 +89,7 @@ p {
 }
 
 /* =========================
-   GRID
+   GRID (DESKTOP & TABLET)
    ========================= */
 .grid {
   display: grid;
@@ -176,6 +176,7 @@ p {
 
 /* =========================
    SOSIAL MEDIA COLORS
+   (DIBIARKAN APA ADANYA)
    ========================= */
 .btn.website {
   background: #f3f4f6;
@@ -218,7 +219,8 @@ p {
 }
 
 /* =========================
-   MOBILE — APP LAUNCHER STYLE
+   MOBILE — APP STYLE RAPI
+   (HANYA PERBAIKAN KERAPIAN)
    ========================= */
 @media (max-width: 480px) {
 
@@ -240,19 +242,13 @@ p {
     border-width: 4px;
   }
 
-  h1 {
-    font-size: 17px;
-  }
-
-  p {
-    font-size: 13px;
-  }
+  h1 { font-size: 17px; }
+  p  { font-size: 13px; }
 
   .section {
     margin-top: 28px;
   }
 
-  /* TITLE LIKE APP GROUP */
   .section-title {
     text-align: left;
     font-size: 13px;
@@ -263,26 +259,28 @@ p {
     display: none;
   }
 
-  /* GRID APP */
+  /* GRID — SAMA SEPERTI SOSMED */
   .grid,
   .grid-sosmed {
     grid-template-columns: repeat(4, 1fr);
     gap: 14px;
   }
 
-  /* APP ICON CARD */
+  /* CARD — TIDAK TERPOTONG */
   .btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
-    padding: 14px 8px;
+    padding: 14px 6px 10px;
+    min-height: 96px;
+
     border-radius: 18px;
     background: #fff;
-
     box-shadow: 0 6px 14px rgba(0,0,0,.08);
     border: none;
+
     text-align: center;
   }
 
@@ -296,9 +294,18 @@ p {
   }
 
   .btn span {
-    font-size: 11px;
-    line-height: 1.3;
-  }
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  white-space: normal;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 
   .footer {
     margin-top: 40px;
