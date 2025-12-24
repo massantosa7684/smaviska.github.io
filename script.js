@@ -29,7 +29,7 @@ window.addEventListener("scroll", () => {
 // =========================
 // MOBILE TAP FEEDBACK
 // =========================
-document.querySelectorAll(".btn").forEach(btn => {
+document.querySelectorAll(".btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     if (navigator.vibrate) {
       navigator.vibrate(20);
@@ -47,4 +47,3 @@ window.addEventListener("load", () => {
     splash.classList.add("hide");
   }, 1800);
 });
-
